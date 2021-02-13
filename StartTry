@@ -1,0 +1,10 @@
+#❤第一次实验 以饼图开始吧！ 
+import numpy as numpy
+import matplotlib.pyplot as plt
+labels = 'english','politics','maths','statistics'
+sizes = [20,30,50,30]
+explode = (0.1,0.2,0.6,0.2)
+fig,ax = plt.subplots()
+ax.pie(sizes, explode=explode,labels=labels,autopct='%.1f%%',shadow=False,startangle=60)
+ax.axis('equal')
+plt.show()
